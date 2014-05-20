@@ -5,8 +5,9 @@ What is this?
 -------------
 
 A PHP and JS tool to display nominees in an event and collect user votes on predicted winners. This iteration was used for the 2013 Emmys.
-Demo: http://data.digitalfirstmedia.com/oscarballot14/
+Live demo: http://www.contracostatimes.com/ci_24105588
 
+![Emmys 2013](screenshots/emmys13.png)
 
 Credits
 ---------
