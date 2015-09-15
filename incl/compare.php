@@ -38,4 +38,3 @@ while($catInfo[]=mysql_fetch_array($sql));
 
 </table>
 
-
