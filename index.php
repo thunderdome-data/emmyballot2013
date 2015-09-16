@@ -79,7 +79,7 @@ endif;
 				
 				<?php 
 					
-					for ($i = 0; $i < count($data)-1; $i++) { ?>
+					for ($i = 0; $i < count($data); $i++) { ?>
 					
 						<li><a href="javascript: void(0);" alt="<?php echo $data[$i]['category'] ?>" id="<?php echo $data[$i]['cat_id'] ?>" class="catSelect fancyPop" title="<?php echo $data[$i]['category'] ?>" popWidth="804" popHeight="841">
                             <img src="img/<?php echo $current_year; ?>/cat<?php echo $data[$i]['cat_id'] ?>.jpg" />
