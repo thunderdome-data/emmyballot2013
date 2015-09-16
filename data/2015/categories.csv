@@ -1,4 +1,4 @@
-id,name,img,critictext,lastwinner,description
+cat_id,category,img,critictext,lastwinner,description
 1,Drama Series,cat0.jpg,,,
 2,Comedy Series,cat1.jpg,,,
 3,"Actor, drama",cat2.jpg,,,
