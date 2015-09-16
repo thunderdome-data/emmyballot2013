@@ -1,4 +1,4 @@
-id,first_name,last_name,movie,category,image,blurb,storylinks,votes
+nom_id,first_name,last_name,movie,category,image,blurb,storylinks,votes
 1,,,"""Better Call Saul""",1,better_call_saul.jpg,,,
 2,,,"""Downton Abbey""",1,downton_abbey.jpg,,,
 3,,,"""Game of Thrones""",1,game_of_thrones.jpg,,,
