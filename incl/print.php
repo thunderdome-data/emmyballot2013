@@ -1,8 +1,8 @@
 <?php
+include('../config.php');
+require_once '../Connection.class.php';
+$connection = new Connection('featuresupdate','emmys');
 	
-require_once 'Connection.class.php';
-$connection = new Connection('featuresupdate','features');
-
 // vars to hold arrays of data
 $data;
 $catInfo;

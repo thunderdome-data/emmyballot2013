@@ -1,4 +1,4 @@
-Emmy Ballot 2013
+Emmy Ballot 
 ========================
 
 What is this?

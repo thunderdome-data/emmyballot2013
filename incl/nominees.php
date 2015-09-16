@@ -5,17 +5,17 @@ $cat_id = intval($_GET['cat_id']);
 $data;
 
 if ( $data_source === 'csv' ):
-    $catData;
     $catDataAll = csv_to_array('../data/' . $current_year . '/categories.csv');
-    $nomData = csv_to_array('../data/' . $current_year . '/nominees.csv');
+    $catData;
+    $catData[] = $catDataAll[$cat_id - 1];
 
     // Build the nominee data
+    $nomData = csv_to_array('../data/' . $current_year . '/nominees.csv');
     foreach ( $nomData as $key => $value ):
         if ( intval ( $value['category'] ) == $cat_id ):
             $data[] = $value;
         endif;
     endforeach;
-    $catData[] = $catDataAll[$cat_id - 1];
 else:
 	require_once 'Connection.class.php';
 	$connection = new Connection('featuresupdate','features');
