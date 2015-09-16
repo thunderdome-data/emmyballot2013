@@ -1,7 +1,8 @@
+<? include('config.php'); ?>
 <!DOCTYPE html> 
 <html lang="en"> 
 <head>
-	<title>Emmys 2015 ballot</title>
+	<title>Emmys <?php echo $current_year; ?> ballot</title>
 	<meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,6 +20,11 @@
     <![endif]-->
 
 <?php
+if ( $data_source === 'csv' ):
+    $data = csv_to_array('data/' . $current_year . '/categories.csv');
+    $catData = csv_to_array('data/' . $current_year . '/categories.csv');
+    $nomData = csv_to_array('data/' . $current_year . '/nominees.csv');
+else:
 	require_once 'Connection.class.php';
 	$connection = new Connection('featuresupdate','features');
 	$sql = 'select * from emmys13_categories';
@@ -34,7 +40,7 @@
 	$sql = 'SELECT * FROM emmys13_nominees ORDER BY nom_id asc';
 	$results = mysqli_query($connection->con,$sql);
 	while($nomData[]=mysqli_fetch_array($results));
-
+endif;
 ?>
 
 </head>
@@ -66,7 +72,7 @@
 			<div id="modcover"></div>
 			
     	</div>  
-            
+           
 		<div id="categories" class="row">
 			<div class="span8"> 
 				<ul class="endscreen_thumb">
@@ -75,7 +81,10 @@
 					
 					for ($i = 0; $i < count($data)-1; $i++) { ?>
 					
-						<li><a href="javascript: void(0);" alt="<?php echo $data[$i]['category'] ?>" id="<?php echo $data[$i]['cat_id'] ?>" class="catSelect fancyPop" title="<?php echo $data[$i]['category'] ?>" popWidth="804" popHeight="841"><img src="img/cat<?php echo $data[$i]['cat_id'] ?>.jpg" /><p class="end_thumb"><?php echo $data[$i]['category'] ?> </p></a></li>
+						<li><a href="javascript: void(0);" alt="<?php echo $data[$i]['category'] ?>" id="<?php echo $data[$i]['cat_id'] ?>" class="catSelect fancyPop" title="<?php echo $data[$i]['category'] ?>" popWidth="804" popHeight="841">
+                            <img src="img/<?php echo $current_year; ?>/cat<?php echo $data[$i]['cat_id'] ?>.jpg" />
+                            <p class="end_thumb"><?php echo $data[$i]['category'] ?>
+                            </p></a></li>
 					
 					<?php }	?>
 	
