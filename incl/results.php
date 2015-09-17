@@ -22,6 +22,7 @@ while($data[]=mysqli_fetch_array($results));
 
 
 $nomData;
+
 if ( $data_source === 'csv' ):
     $nomDataAll = csv_to_array('../data/' . $current_year . '/nominees.csv');
     foreach ( $nomDataAll as $key => $value ):

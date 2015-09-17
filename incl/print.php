@@ -7,16 +7,19 @@ $connection = new Connection('featuresupdate','emmys');
 $data;
 $catInfo;
 
-## get data
 
-$sql = 'SELECT * FROM emmys13_categories ORDER BY cat_id asc';
-$results = mysqli_query($connection->con,$sql);
-while($catData[]=mysqli_fetch_array($results));
+if ( $data_source === 'csv' ):
+    $catData = csv_to_array('../data/' . $current_year . '/categories.csv');
+    $nomData = csv_to_array('../data/' . $current_year . '/nominees.csv');
+else:
+    $sql = 'SELECT * FROM emmys13_categories ORDER BY cat_id asc';
+    $results = mysqli_query($connection->con,$sql);
+    while($catData[]=mysqli_fetch_array($results));
 
-$sql = 'SELECT * FROM emmys13_nominees ORDER BY nom_id asc';
-$results = mysqli_query($connection->con,$sql);
-while($nomData[]=mysqli_fetch_array($results));
-
+    $sql = 'SELECT * FROM emmys13_nominees ORDER BY nom_id asc';
+    $results = mysqli_query($connection->con,$sql);
+    while($nomData[]=mysqli_fetch_array($results));
+endif;
 
  ?>
  
@@ -28,21 +31,21 @@ while($nomData[]=mysqli_fetch_array($results));
 
 	<?php // CATEGORIES LOOP START
 	
-		for ($i = 0; $i < count($catData)-1; $i++) {  ?>
+		for ($i = 0; $i < count($catData)-1; $i++):  ?>
 
 			<h2><?php echo $catData[$i]['category'] ?></h2>
 
 			<?php // NOMINEES LOOP START
 			
-				for ($j = 0; $j < count($nomData)-1; $j++) { 
+				for ($j = 0; $j < count($nomData)-1; $j++):
 					
-					if ($nomData[$j]['cat_id'] == $i+1) { ?>
+					if ($nomData[$j]['cat_id'] == $i+1): ?>
 						<p id="<?php echo 'nom'. $nomData[$j]['nom_id'].'p' ?>" > <?php echo $nomData[$j]['first_name'].' '.$nomData[$j]['last_name'].' '.$nomData[$j]['movie'].' ' ?></p>
 				
-			<?php }
-			} // NOMINEES LOOP END ?>
+			<?php endif;
+			endfor; // NOMINEES LOOP END ?>
 		
-<?php } // CATEGORIES LOOP END ?>
+<?php endfor; // CATEGORIES LOOP END ?>
 
 
 
