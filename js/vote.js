@@ -42,6 +42,9 @@ $(document).ready(function() {
 				$('#nom'+ nomID).addClass('active');
 				$('#resultCatName').html('User Poll Results: Best ' + catTitle);
 		   });
+
+            // WE ALSO SHOULD HIDE THE VOTE BUTTONS SO THEY DON'T VOTE AGAIN.
+            $('.vote_btn').hide();
 		   
 	});
 	
