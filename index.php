@@ -260,7 +260,7 @@ if ( iframe === '' ) {
     <script>
         if ( iframe === 1 )
         {
-            $('h1, footer, #previous').remove()
+            $('h1, footer, p#crit, #previous').remove()
         }
     </script>
 </body>
