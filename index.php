@@ -54,16 +54,18 @@ endif;
 			<div id="btnNav">
 			<ul class="nav nav-pills">
 			   <li id="home_btn" class="active"><a href="#">All categories</a></li>
+<!--
                <li class="dropdown">
                 <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">Select a category <b class="caret"></b></a>
                 <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
                 <?php
-				for ($i = 0; $i < count($data)-1; $i++) { ?>
+				for ($i = 0; $i < count($data)-1; $i++): ?>
 					 <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:getNominees(<?php echo $data[$i]['cat_id'] ?>,'<?php echo $data[$i]['category'] ?>');"><?php echo $data[$i]['category'] ?></a></li>
 
-				<?php } ?>
+				<?php endfor; ?>
                 </ul>
               </li>
+-->
               <li id="nextCat_btn" class="active"><a href="#">Next category</a></li>
               <li id="printview_btn" class="active"><a href="#">See your selections</a></li>
             </ul>
@@ -126,7 +128,7 @@ endif;
 	<div style="clear:both"></div>
 	
 	<div id="sourceCreds">
-	Credits: Programming by Peggy Bustamante. Design by Nelson Hsu. Editorial content by John Hendrickson and Kelly Metz / DFM. All photos courtesy of Getty Images.
+	Credits: Programming by Peggy Bustamante and Joe Murphy. Design by Nelson Hsu. Editorial content by Joanne Ostrow and Dave Burdick. All photos courtesy of Getty Images.
 	</div>
 </div><!-- END container -->
 
