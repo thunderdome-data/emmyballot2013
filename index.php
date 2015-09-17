@@ -47,7 +47,7 @@ endif;
 
 <body>
 
-	<p class="crit">Cast your predictions for the 65th Primetime Emmy Awards, to be broadcast live Sunday, Sept. 22 on CBS. Click on any category below, which will lead you to a list of nominees. From there, you can select "Next category" or "All categories" to keep voting. When finished, print out your finished ballot or check back on Emmy night to see how you did!</p>
+	<p class="crit"><?php echo $conf[$current_year]['intro']; ?> Click on any category below, which will lead you to a list of nominees. From there, you can select "Next category" to keep voting. When finished, print out your finished ballot or check back on Emmy night to see how you did!</p>
   
   <div id="container" class="container" style="margin:0px">
       	<div id="header" class="row">  

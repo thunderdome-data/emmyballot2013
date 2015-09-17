@@ -5,7 +5,7 @@ $data_source = 'csv'; // Either 'csv' or 'db'
 
 $conf = array(
     '2015' => array(
-        'intro' => '',
+        'intro' => 'Cast your predictions for the 67th Primetime Emmy Awards, to be broadcast live Sunday, Sept. 20, on Fox.',
         )
 );
 
