@@ -5,7 +5,8 @@ What is this?
 -------------
 
 A PHP and JS tool to display nominees in an event and collect user votes on predicted winners. This iteration was used for the 2013 Emmys.
-Live demo: http://www.contracostatimes.com/ci_24105588
+2013 demo: http://www.contracostatimes.com/ci_24105588
+2015 interactive: 
 
 ![Emmys 2013](screenshots/emmys13.png)
 
@@ -43,6 +44,7 @@ How to use this
 	
 2. upload your data to MySQL tables.
 3. Change the SQL calls to your named tables in index.php, nominees.php, print.php, results.php.
+4. Copy the data/Connection.class.php.example into somewhere on your php include path. Change its name to Connection.class.php. Edit where appropriate.
 
 Recommendation: remove static data (nominees names, category names etc.) from the database and pull them in from CSV or JSON files. Only use the database for vote count.
 
