@@ -12,7 +12,7 @@ var winners = {};
 
 $(document).ready(function() {
 	
-	//$('#print').load('incl/print.php');
+	$('#print').load('incl/print.php');
 	$("#modcover").hide();
 
    //SHOW NOMINEES FOR SELECTED CATEGORY
