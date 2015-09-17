@@ -7,6 +7,7 @@ var votes = [];
 // this is for awards results -- not user voting results
 // ***AFTERWARD
 ////var winners = {'1':'nom1','2':'nom12','3':'nom15','4':'nom23','5':'nom27','6':'nom36','7':'nom39','8':'nom48','9':'nom50','10':'nom56','11':'nom67','12':'nom72'};
+var winners = {};
  
 
 $(document).ready(function() {

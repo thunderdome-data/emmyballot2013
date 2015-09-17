@@ -81,7 +81,7 @@ endif;
 
 <script>
 $(function () { 
-	$(".nomSelect").popover({trigger:'hover', placement: 'bottom', html: true });
+//	$(".nomSelect").popover({trigger:'hover', placement: 'bottom', html: true });
 });
 </script>
 
