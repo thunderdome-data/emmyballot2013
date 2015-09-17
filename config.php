@@ -6,6 +6,7 @@ $data_source = 'csv'; // Either 'csv' or 'db'
 $conf = array(
     '2015' => array(
         'intro' => 'Cast your predictions for the 67th Primetime Emmy Awards, to be broadcast live Sunday, Sept. 20, on Fox.',
+        'credits' => 'Programming by Peggy Bustamante and Joe Murphy. Design by Nelson Hsu. Editorial content by Joanne Ostrow and Dave Burdick. All photos courtesy of Getty Images.'
         )
 );
 

@@ -54,7 +54,6 @@ endif;
 			<div id="btnNav">
 			<ul class="nav nav-pills">
 			   <li id="home_btn" class="active"><a href="#">All categories</a></li>
-<!--
                <li class="dropdown">
                 <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">Select a category <b class="caret"></b></a>
                 <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
@@ -65,7 +64,6 @@ endif;
 				<?php endfor; ?>
                 </ul>
               </li>
--->
               <li id="nextCat_btn" class="active"><a href="#">Next category</a></li>
               <li id="printview_btn" class="active"><a href="#">See your selections</a></li>
             </ul>
@@ -128,7 +126,7 @@ endif;
 	<div style="clear:both"></div>
 	
 	<div id="sourceCreds">
-	Credits: Programming by Peggy Bustamante and Joe Murphy. Design by Nelson Hsu. Editorial content by Joanne Ostrow and Dave Burdick. All photos courtesy of Getty Images.
+	Credits: <?php echo $conf[$current_year]['credits']; ?>
 	</div>
 </div><!-- END container -->
 
