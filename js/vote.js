@@ -1,6 +1,6 @@
 // SETTING VALUE
 var catID = 0;
-var catLength = 12;
+var catLength = 10;
 var nomID = '';
 var catTitle = '';
 var votes = [];
