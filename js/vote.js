@@ -137,7 +137,7 @@ $(document).ready(function() {
 	function setUserVote(nomID) {
 		   	// highlight user's votes
 			for (vote in votes) {
-				$('#' + votes[vote] + ' p').addClass("uservoted");
+				$('#' + votes[vote] + 'p').show();
 			}
 
 	}

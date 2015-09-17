@@ -39,7 +39,7 @@ endif;
 			
 				for ($j = 0; $j < count($nomData)-1; $j++):
 					
-					if ($nomData[$j]['cat_id'] == $i+1): ?>
+					if ($nomData[$j]['category'] == $i+1): ?>
 						<p id="<?php echo 'nom'. $nomData[$j]['nom_id'].'p' ?>" > <?php echo $nomData[$j]['first_name'].' '.$nomData[$j]['last_name'].' '.$nomData[$j]['movie'].' ' ?></p>
 				
 			<?php endif;
