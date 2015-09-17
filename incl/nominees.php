@@ -45,6 +45,7 @@ $winPerc;
 endif;
 
 ?>
+
    <h2>NOMINEES FOR: Best <?php echo $catData[0]['category'] ?></h2>
    <p class="crit"><?php echo $catData[0]['description'] ?></p>
     <?php if ( trim($catData[0]['lastwinner']) != '' ): ?>
@@ -54,7 +55,7 @@ endif;
 		
 		<?php 
 			
-			for ($i = 0; $i < count($data)-1; $i++) { 
+			for ($i = 0; $i < count($data); $i++) { 
 				
 				if ($data[$i]['votes'] == 0) {
 					$winPerc = 0;
