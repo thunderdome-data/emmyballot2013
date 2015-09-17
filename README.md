@@ -46,6 +46,12 @@ How to use this
 
 Recommendation: remove static data (nominees names, category names etc.) from the database and pull them in from CSV or JSON files. Only use the database for vote count.
 
+## Gotchas
+
+There are things that are hard-coded into js/vote.js. One of those things is the number of categories, which changes from year to year.
+
+Also hard-coded: This app works differently before the winners are announced than it does after, and we need to write instructions on how to handle both (right now it's set for before the winners are announced).
+
 # License
 
 The MIT License (MIT)
