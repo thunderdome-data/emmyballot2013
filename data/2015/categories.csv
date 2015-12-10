@@ -1,0 +1,11 @@
+cat_id,category,img,critictext,lastwinner,description
+1,Drama Series,cat0.jpg,,,
+2,Comedy Series,cat1.jpg,,,
+3,"Actor, drama",cat2.jpg,,,
+4,"Actress, drama",cat3.jpg,,,
+5,"Actor, comedy",cat4.jpg,,,
+6,"Actress, comedy",cat5.jpg,,,
+7,Limited series,cat6.jpg,,,
+8,"Lead actor, limited series or movie",cat7.jpg,,,
+9,"Lead actress, limited series or movie",cat8.jpg,,,
+10,Writing for a variety series,cat9.jpg,,,

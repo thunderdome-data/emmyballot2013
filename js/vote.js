@@ -1,16 +1,18 @@
 // SETTING VALUE
 var catID = 0;
-var catLength = 12;
+var catLength = 10;
 var nomID = '';
 var catTitle = '';
 var votes = [];
 // this is for awards results -- not user voting results
-var winners = {'1':'nom1','2':'nom12','3':'nom15','4':'nom23','5':'nom27','6':'nom36','7':'nom39','8':'nom48','9':'nom50','10':'nom56','11':'nom67','12':'nom72'};
+// ***AFTERWARD
+////var winners = {'1':'nom1','2':'nom12','3':'nom15','4':'nom23','5':'nom27','6':'nom36','7':'nom39','8':'nom48','9':'nom50','10':'nom56','11':'nom67','12':'nom72'};
+var winners = {};
  
 
 $(document).ready(function() {
 	
-	//$('#print').load('incl/print.php');
+	$('#print').load('incl/print.php');
 	$("#modcover").hide();
 
    //SHOW NOMINEES FOR SELECTED CATEGORY
@@ -40,6 +42,9 @@ $(document).ready(function() {
 				$('#nom'+ nomID).addClass('active');
 				$('#resultCatName').html('User Poll Results: Best ' + catTitle);
 		   });
+
+            // WE ALSO SHOULD HIDE THE VOTE BUTTONS SO THEY DON'T VOTE AGAIN.
+            $('.vote_btn').hide();
 		   
 	});
 	

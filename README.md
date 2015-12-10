@@ -1,11 +1,12 @@
-Emmy Ballot 2013
+Emmy Ballot 
 ========================
 
 What is this?
 -------------
 
 A PHP and JS tool to display nominees in an event and collect user votes on predicted winners. This iteration was used for the 2013 Emmys.
-Live demo: http://www.contracostatimes.com/ci_24105588
+2013 demo: http://www.contracostatimes.com/ci_24105588
+2015 interactive: 
 
 ![Emmys 2013](screenshots/emmys13.png)
 
@@ -43,10 +44,36 @@ How to use this
 	
 2. upload your data to MySQL tables.
 3. Change the SQL calls to your named tables in index.php, nominees.php, print.php, results.php.
+4. Copy the data/Connection.class.php.example into somewhere on your php include path. Change its name to Connection.class.php. Edit where appropriate.
 
 Recommendation: remove static data (nominees names, category names etc.) from the database and pull them in from CSV or JSON files. Only use the database for vote count.
 
-License
-----------
+## Gotchas
 
-This code is available under the MIT license. For more information, please see the LICENSE.txt file in this repo.
+There are things that are hard-coded into js/vote.js. One of those things is the number of categories, which changes from year to year.
+
+Also hard-coded: This app works differently before the winners are announced than it does after, and we need to write instructions on how to handle both (right now it's set for before the winners are announced).
+
+# License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 The Denver Post
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
