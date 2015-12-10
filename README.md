@@ -4,15 +4,16 @@ Emmy Ballot
 What is this?
 -------------
 
-A PHP and JS tool to display nominees in an event and collect user votes on predicted winners. This iteration was used for the 2013 Emmys.
+A PHP and JS tool to display nominees in an event and collect user votes on predicted winners. This was originally built for the 2013 Emmys and has been refactored to be reusable year after year.
 2013 demo: http://www.contracostatimes.com/ci_24105588
-2015 interactive: 
+2015 interactive: http://www.denverpost.com/entertainment/ci_28816835/emmy-predictions-2015-who-should-win-and-who
 
 ![Emmys 2013](screenshots/emmys13.png)
 
 Credits
 ---------
-Peggy Bustamante
+[Peggy Bustamante](https://www.github.com/peggybustamante)
+[Joe Murphy](https://www.github.com/freejoe76)
 
 
 Assumptions
@@ -58,7 +59,7 @@ Also hard-coded: This app works differently before the winners are announced tha
 
 The MIT License (MIT)
 
-Copyright (c) 2015 The Denver Post
+Copyright (c) 2013-2015 The Denver Post and Digital First Media
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
